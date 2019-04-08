@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!-- saved from url=(0043)http://www-personal.umich.edu/~ywchao/hico/ -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>MKHAN</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+    <table border="0" width="1000px" align="center">
+        <tbody>
+            <tr>
+                <td>
+                    <center>
+                        <h1>
+                            <font face="helvetica" style="font-size:87%">
+                                Multi-modal Knowledge-aware Hierarchical Attention Network
+                                <br>
+                                for Explainable Medical Question Answering
+                            </font>
+                        </h1>
+                    </center>
+                    <br>
+                    <h2>
+                        <font face="helvetica" style="font-size:24px">Introduction</font>
+                    </h2>
+                    <hr style="margin-top:-10px; margin-bottom:13px">
+                    <font face="helvetica" style="font-size:18px">
+                        <p align="justify">
+                            Online healthcare services can offer public ubiquitous access to the medical knowledge, especially with the emergence of medical question answering websites, where patients can get in touch with doctors without going to hospital. Explainability and accuracy are two main concerns for medical question answering. However, existing methods mainly focus on accuracy and cannot provide a good explanation for retrieved medical answers. This paper proposes a novel Multi-Modal Knowledge-aware Hierarchical Attention Network (MKHAN) to effectively exploit multi-modal knowledge graph (MKG) for explainable medical question answering. MKHAN can generate path representation by composing the structural, linguistics, and visual information of entities, and then infer the underlying rationale of question-answer interactions by leveraging the sequential dependencies within a path from MKG. Furthermore, a novel hierarchical attention network is proposed to discriminate the salience of paths in connecting entities in a question-answer pair,endowing our model with explainability. We build a large-scale multi-modal medical knowledge graph andtwo real-world medical question answering datasets, the experimental results demonstrate the superior performance on our approach compared with the state-of-the-art algorithms.
+                        </p>
+                        <p>
+                            <b>Compared with existing methods, our framework has several advantages:</b>
+                        </p>
+                        <ol style="margin-top:-7px">
+                            <li>We are among the first to study on explainable medical question answering over multi-modal knowledge graph, which is challenging on both data acquisition and model design. We propose a novel Multi-modal Knowledge-aware Hierarchical Attention Network (MKHAN), which utilizes the domain knowledge to explain the retrieved answer. It explains the proper answer by performing reasoning over multi-modal knowledge graph, and discriminating the strengths of paths with hierarchical attention network.</li>
+                            <li>We build a multi-modal knowledge graph which incorporates structural, linguistic and visual features to learn the representation of entities and relations.</li>
+                            <li>We build two large scale real-world Chinese medical question answering datasets, and evaluate our proposed model on them. Compared with the state-of-the-art methods, our approach not only improves the accuracy, but also holds the explanation capacity.</li>
+                        </ol>
+                    </font>
+                   
+<!--                     <h2>
+                        <font face="helvetica" style="font-size:24px">Motivation</font>
+                    </h2>
+                    <hr style="margin-top:-10px; margin-bottom:13px"> -->
+                    <font face="helvetica" style="font-size:15px">
+                        <p style="padding-bottom:1px"></p>
+                        <h2>
+                            <font face="helvetica" style="font-size:24px">Path Representation based on Multi-modal Knowledge Graph</font>
+                        </h2>
+
+                        <hr style="margin-top:-10px; margin-bottom:13px">
+                        <font face="helvetica" style="font-size:15px">
+                            <center>
+                                <img src="./assets/img/path_embedding.jpg" width="800">
+                                <br>
+                                <strong>Figure 1</strong> Path Representation based on Multi-modal Knowledge Graph
+                            </center>
+                            <br>
+                        </font>
+                        <h2>
+                            <font face="helvetica" style="font-size:24px">Path Reasoning via Hierarchical Attention Network</font>
+                        </h2>
+                        <hr style="margin-top:-10px; margin-bottom:13px">
+                        <font face="helvetica" style="font-size:15px">
+                            <center>
+                                <img src="./assets/img/overall_framework.jpg"  width="800">
+                                <br>
+                                <strong>Figure 2</strong> Path Reasoning via Hierarchical Attention Network.
+                            </center>
+                        </font>
+                        
+                        <h2>
+                            <font face="helvetica" style="font-size:24px">Dataset</font>
+                        </h2>
+                        <hr style="margin-top:-10px; margin-bottom:13px">
+                        <font face="helvetica" style="font-size:15px">
+                            <div>
+                                <a href="" style="text-decoration: none;">
+                                    <img src="./assets/img/download_button.jpg" height="30px">
+                                </a>
+                                <div style="margin-left: 10px; display: inline-block;">
+                                    <a href="https://pan.baidu.com/s/1V4la8_2rxcypDrwWZ_ZbRA">Multi-modal Medical Knowledge Graph</a> 57.05 GB<br>
+                                    pwd: r5jo
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <table border="1" align="center">
+                                <tr>
+                                    <th align="center" bgcolor=#F0F0F0>&nbsp;#Type&nbsp;</th>
+                                    <th align="center" bgcolor=#F0F0F0>&nbsp;#Rel&nbsp;<br></th>
+                                    <th align="center" bgcolor=#F0F0F0>&nbsp;#Triples &nbsp;<br></th>
+                                    <th align="center" bgcolor=#F0F0F0>&nbsp;#Images &nbsp;<br></th>
+                                </tr>
+                                <tr>
+                                    <td align="center">&nbsp;6</td>
+                                    <td align="center">&nbsp;17</td>
+                                    <td align="center">&nbsp;59882</td>
+                                    <td align="center">&nbsp;741935</tds>
+                                </tr>
+                            </table> <br>
+                            <div>
+                                <a href="" style="text-decoration: none;">
+                                    <img src="./assets/img/download_button.jpg" height="30px">
+                                </a>
+                                <div style="margin-left: 10px; display: inline-block;">
+                                    <a href="https://pan.baidu.com/s/1xP6NfCjUmOxhA2i9682KMg">Medical Questions and Answers</a> 7.93 GB<br>
+                                    pwd: sygq
+                                </div>
+                            </div>
+                            <br>
+                            <table border="1" align="center">
+                                <tr>
+                                    <th align="center" bgcolor=#F0F0F0>&nbsp;#Dataset &nbsp;</th>
+                                    <th align="center" bgcolor=#F0F0F0>&nbsp;#QA pairs &nbsp;<br></th>
+                                    <th align="center" bgcolor=#F0F0F0>&nbsp;#Avg. Q-Len &nbsp;<br></th>
+                                    <th align="center" bgcolor=#F0F0F0>&nbsp;#Avg. A-Len &nbsp;<br></th>
+                                    <th align="center" bgcolor=#F0F0F0>&nbsp;#Clinics &nbsp;<br></th>
+                                </tr>
+                                <tr>
+                                    <td align="center">&nbsp;Chunyu</td>
+                                    <td align="center">&nbsp;245085</td>
+                                    <td align="center">&nbsp;32</td>
+                                    <td align="center">&nbsp;75</td>
+                                    <td align="center">&nbsp;16</td>
+                                </tr>
+                                <tr>
+                                    <td align="center">&nbsp;Dingxiang</td>
+                                    <td align="center">&nbsp;273003</td>
+                                    <td align="center">&nbsp;115</td>
+                                    <td align="center">&nbsp;284</td>
+                                    <td align="center">&nbsp;25</tds>
+                                </tr>
+                            </table> <br>
+
+                        </font>
+                   
+                        <h2>
+                            <font face="helvetica" style="font-size:24px">Results</font>
+                        </h2>
+                     
+                        <div>
+                        <hr />
+                        <h3>
+                            <font face="helvetica" style="font-size:20px">Noise Image Filtering Results</font>
+                        </h3>
+
+                        <p><img src="./assets/img/Noise1.jpg" width=480px><img src="./assets/img/Noise2.jpg" width=480px></p>
+                        <p>&nbsp;</p>
+                        <h3>
+                            <font face="helvetica" style="font-size:20px">Retrieval Accuracy</font>
+                        </h3>
+                        <p>Chunyu Dataset：</p>
+                        <p><img src='./assets/img/res_chunyu.jpg' alt='' referrerPolicy='no-referrer' width=960px /></p>
+                        <p>Dingxiang Dataset:</p>
+                        <p><img src='./assets/img/res_dingxiang.jpg' alt='' referrerPolicy='no-referrer' width=960px /></p>
+                
+                        <h3>
+                            <font face="helvetica" style="font-size:20px">Reasoning Expample (Chinese)</font>
+                           
+                        </h3>
+                         <p><img src='./assets/img/path_c.jpg' alt='' referrerPolicy='no-referrer' width=960px /></p>
+                        <h3>
+                            <font face="helvetica" style="font-size:20px">Reasoning Expample (English)</font>
+                            
+                        </h3>
+                        <p><img src='./assets/img/path_e.jpg' alt='' referrerPolicy='no-referrer' width=960px /></p>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
